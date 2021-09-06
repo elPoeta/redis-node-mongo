@@ -5,12 +5,12 @@ switch (process.env.NODE_ENV) {
   case "development":
     console.log("Environment is 'development'")
     configDotenv({
-      path: resolve(__dirname, "../.env-dev")
+      path: resolve(__dirname, "../../.env-dev")
     })
     break
   case "test":
     configDotenv({
-      path: resolve(__dirname, "../.env.test")
+      path: resolve(__dirname, "../../.env.test")
     })
     break
   default:

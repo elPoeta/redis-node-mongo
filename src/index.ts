@@ -1,6 +1,6 @@
-import './config';
+import './config/envConf';
 import express, { Application } from 'express';
-
+import './config/connection';
 const app: Application = express();
 
 const PORT: string | undefined = process.env.PORT;
